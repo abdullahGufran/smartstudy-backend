@@ -13,6 +13,9 @@ app.use(cors());
 
 const PORT=5000;
 
+app.get('/',(req,res)=>{
+    res.send('API is running....');
+});
 
 
 
