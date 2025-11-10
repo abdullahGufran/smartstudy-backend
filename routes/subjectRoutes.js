@@ -9,7 +9,7 @@ const router = express.Router();
 // Get all subjects for a class (existing)
 router.get("/:className", async (req, res) => {
   try {
-    const subjects = await Subject.find({ classId: req.params.className }).sort({ name: 1 });
+    const subjects = await Subject.find({ ClassName: req.params.className }).sort({ name: 1 });
     console.log(subjects);
     
   } catch (error) {

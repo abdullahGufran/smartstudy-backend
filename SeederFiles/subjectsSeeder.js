@@ -13,21 +13,16 @@ const dbConnect = async () => {
     await SubjectModel.deleteMany({});
 
     // Map of class names to their IDs
-    const classMap = {
-      "9": "690f6a9e19cb2985276b5609",
-      "10": "690f6a9e19cb2985276b560a",
-      "11": "690f6a9e19cb2985276b560b",
-      "12": "690f6a9e19cb2985276b560c",
-    };
+  
 
     // Subjects for each class
     const subjects = [
       // Class 9
-      { name: "Mathematics", slug: "mathematics", classId: classMap["9"] },
-      { name: "Physics", slug: "physics", classId: classMap["9"] },
-      { name: "Chemistry", slug: "chemistry", classId: classMap["9"] },
-      { name: "Biology", slug: "biology", classId: classMap["9"] },
-      { name: "English", slug: "english", classId: classMap["9"] },
+      { name: "Mathematics", slug: "mathematics", ClassName: "9" },
+      { name: "Physics", slug: "physics", ClassName: "9" },
+      { name: "Chemistry", slug: "chemistry", ClassName: "9" },
+      { name: "Biology", slug: "biology", ClassName: "9"},
+      { name: "English", slug: "english", ClassName: "9" },
 
       // Class 10
       { name: "Mathematics", slug: "mathematics", classId: classMap["10"] },

@@ -13,6 +13,7 @@ router.get("/", async (req, res) => {
       .map((cls) => cls.name)
       .sort((a, b) => Number(a) - Number(b));
 
+      console.log(classArray);
     res.json(classArray);
   } catch (error) {
     console.error("Error fetching classes:", error);
