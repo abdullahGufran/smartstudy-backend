@@ -12,38 +12,35 @@ const dbConnect = async () => {
     // Clear existing subjects
     await SubjectModel.deleteMany({});
 
-    // Map of class names to their IDs
-  
-
     // Subjects for each class
     const subjects = [
       // Class 9
       { name: "Mathematics", slug: "mathematics", ClassName: "9" },
       { name: "Physics", slug: "physics", ClassName: "9" },
       { name: "Chemistry", slug: "chemistry", ClassName: "9" },
-      { name: "Biology", slug: "biology", ClassName: "9"},
+      { name: "Biology", slug: "biology", ClassName: "9" },
       { name: "English", slug: "english", ClassName: "9" },
 
       // Class 10
-      { name: "Mathematics", slug: "mathematics", classId: classMap["10"] },
-      { name: "Physics", slug: "physics", classId: classMap["10"] },
-      { name: "Chemistry", slug: "chemistry", classId: classMap["10"] },
-      { name: "Biology", slug: "biology", classId: classMap["10"] },
-      { name: "English", slug: "english", classId: classMap["10"] },
+      { name: "Mathematics", slug: "mathematics", ClassName: "10" },
+      { name: "Physics", slug: "physics", ClassName: "10" },
+      { name: "Chemistry", slug: "chemistry", ClassName: "10" },
+      { name: "Biology", slug: "biology", ClassName: "10" },
+      { name: "English", slug: "english", ClassName: "10" },
 
       // Class 11
-      { name: "Mathematics", slug: "mathematics", classId: classMap["11"] },
-      { name: "Physics", slug: "physics", classId: classMap["11"] },
-      { name: "Chemistry", slug: "chemistry", classId: classMap["11"] },
-      { name: "Biology", slug: "biology", classId: classMap["11"] },
-      { name: "English", slug: "english", classId: classMap["11"] },
+      { name: "Mathematics", slug: "mathematics", ClassName: "11" },
+      { name: "Physics", slug: "physics", ClassName: "11" },
+      { name: "Chemistry", slug: "chemistry", ClassName: "11" },
+      { name: "Biology", slug: "biology", ClassName: "11" },
+      { name: "English", slug: "english", ClassName: "11" },
 
       // Class 12
-      { name: "Mathematics", slug: "mathematics", classId: classMap["12"] },
-      { name: "Physics", slug: "physics", classId: classMap["12"] },
-      { name: "Chemistry", slug: "chemistry", classId: classMap["12"] },
-      { name: "Biology", slug: "biology", classId: classMap["12"] },
-      { name: "English", slug: "english", classId: classMap["12"] },
+      { name: "Mathematics", slug: "mathematics", ClassName: "12" },
+      { name: "Physics", slug: "physics", ClassName: "12" },
+      { name: "Chemistry", slug: "chemistry", ClassName: "12" },
+      { name: "Biology", slug: "biology", ClassName: "12" },
+      { name: "English", slug: "english", ClassName: "12" },
     ];
 
     // Insert into DB
