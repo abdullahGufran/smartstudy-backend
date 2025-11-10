@@ -169,7 +169,7 @@ const seedChapters = async () => {
     await ChapterModel.deleteMany({});
     await ChapterModel.insertMany(chapters);
 
-    console.log(`✅ ${chapters.length} Chapters Seeded Successfully`);
+    console.log(`✅ ${chapters.length} Chapters seeding Successfully`);
     process.exit(0);
   } catch (err) {
     console.error("❌ Seeding Error:", err);
